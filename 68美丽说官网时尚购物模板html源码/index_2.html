@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>简控网-让控件使用不再困难    拆件网</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*<!-- 主页项目案例商品  点进去二级页面项目案例拆件学习路线 -->*/
+		/*清除浏览器边距*/
+			*{
+			margin: 0px;
+			padding: 0px;
+		}
+		/*页面字体类型 字体大小*/
+		body{
+			font-family: Arial;
+			font-size: 12px;
+		}
+		/*去除超链接下划线*/
+		a{
+			text-decoration: none;
+		}
+		/*鼠标放上后字体变色*/
+		a:hover{
+			color: #FF6699;
+		}
+		#top{
+			/*样式控制*/
+			/*宽*/
+			width: 100%;
+			/*高*/
+			height: 31px;
+			/*边框#EEEEEE点控蓝色边框*/
+			border: 1px solid blue;
+			/*背景*/
+			background: #FFFFFF;
+		}
+		/*列表ul属性：宽width高height margin ul盒子对齐方式  text-align列表项对齐方式*/
+		.topz{
+			width: 1200px;
+			height: 30px;
+			margin: auto;
+			/*点控列表文字进而控制列表项盒子向右对齐*/
+			text-align: right;
+		}
+		/*点控红色边框*/
+		.topz ul{
+		  border: 1px solid red;
+		  height: 30px;
+		  margin: auto;
+		}
+		.topz li{
+			/*点控粉色边框*/
+			border: 1px solid pink;
+			/*把无序列表的黑点去掉*/
+			list-style: none;
+			text-align: center;
+			/*设置文字高度30*/
+			line-height: 30px;
+			/*display规定元素应该生成的框的类型inline-block行内块元素 使列表内容排成一条线*/
+			display: inline-block
+
+		}
+		
+		.topz a{
+			/*列表项超链颜色*/
+			color: #666666;
+			padding: 0 15px;
+			line-height: 21px;
+			/*inline-block行内块元素*/
+			display: inline-block;
+			border-right: 1px dotted #CCCCCC;
+		}
+		/*点控超链接里内容时字体的颜色*/
+		.topz li a:hover{
+			color: #FF6699;
+		}
+		/*------li--1.用em在文字前面引入背景图标------*/
+		.wx{
+			background: url(image/wx.png) no-repeat;
+            padding: 1px 11px;
+		}
+		.qq{
+			background: url(image/bg.png) no-repeat -186px -21px;
+			padding: 1px 12px;
+		}
+		
+		/*---------图片--2.在列表项class设置列表项盒子的长度 宽度--------*/
+		.line1{
+			width: 101px;
+			height: 30px;
+			/*line-height: 30px;*/
+		}
+		.line2{
+			width: 97px;
+			height: 30px;
+			/*line-height: 30px;*/
+			/*在列表项中使用margin可以把列表项整体左右位移*/
+			margin-left: 30px;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+<!--顶部----->
+         <!-- #id  #top -->
+		<div id="top">
+			<!-- .taopz 蓝色边框-->
+			<div class="topz">
+				<ul>
+					<!--seo： <em> 标签告诉浏览器把其中的文本表示为强调的内容 -->
+				   <li class="line1"><a href=""><em class="wx"></em>微信登录</a></li>
+				   <li class="line2"><a href=""><em class="qq"></em>QQ登录</a></li>
+				   
+				</ul>
+			</div>
+		</div>
+		<!--美丽说顶部-结束---->
+</body>
+</html>

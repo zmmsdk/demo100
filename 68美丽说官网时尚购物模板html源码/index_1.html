@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>简控网-让控件使用不再困难    拆件网</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*<!-- 主页项目案例商品  点进去二级页面项目案例拆件学习路线 -->*/
+		/*清除浏览器边距*/
+			*{
+			margin: 0px;
+			padding: 0px;
+		}
+		/*页面字体类型 字体大小*/
+		body{
+			font-family: Arial;
+			font-size: 12px;
+		}
+		/*去除超链接下划线*/
+		a{
+			text-decoration: none;
+		}
+		/*鼠标放上后字体变色*/
+		a:hover{
+			color: #FF6699;
+		}
+		#top{
+			/*样式控制*/
+			/*宽*/
+			width: 100%;
+			/*高*/
+			height: 31px;
+			/*边框#EEEEEE点控蓝色边框*/
+			border: 1px solid blue;
+			/*背景*/
+			background: #FFFFFF;
+		}
+		.topz{
+			width: 1200px;
+			height: 30px;
+			margin: auto;
+			/*点控列表文字进而控制列表项盒子向右对齐 对齐属性为left center right*/
+			text-align: right;
+		}
+		/*点控红色边框*/
+		.topz ul{
+		  border: 1px solid red;
+		  height: 30px;
+		  margin: auto;
+		}
+		.topz li{
+			/*点控粉色边框*/
+			border: 1px solid pink;
+			/*把无序列表的黑点去掉*/
+			list-style: none;
+			text-align: center;
+			/*设置文字高度30*/
+			line-height: 30px;
+			/*display规定元素应该生成的框的类型inline-block行内块元素 使列表内容排成一条线*/
+			display: inline-block
+
+		}
+		.topz a{
+			/*列表项超链颜色*/
+			color: #666666;
+			padding: 0 15px;
+			line-height: 21px;
+			/*inline-block行内块元素*/
+			display: inline-block;
+			border-right: 1px dotted #CCCCCC;
+		}
+		.topz li a:hover{
+			color: #FF6699;
+		}
+		/*------li--用em在文字前面引入背景图标------*/
+		.wx{
+			background: url(image/wx.png) no-repeat;
+            padding: 1px 11px;
+		}
+		.qq{
+			background: url(image/bg.png) no-repeat -186px -21px;
+			padding: 1px 12px;
+		}
+		.gwc{
+			background: url(image/bg.png) no-repeat  0 -164px;
+			padding: 1px 11px;
+		}
+		.tip{
+			color: #fff;
+            background: #ff6497;
+            padding: 0 6px;
+		}
+		.dtan{
+			background: url(image/bg.png) no-repeat  -223px -45px;
+			padding: 1px 11px;
+		}
+		.hyuan{
+			background: url(image/hyuan.png) no-repeat;
+			padding: 1px 11px;
+		}
+		.app{
+			background: url(image/bg.png) no-repeat  -170px -45px;
+			padding: 1px 12px;
+		}
+		.arrow {
+            width: 10px;
+            height: 6px;
+            float: right;
+            line-height: 30px;
+            margin-top: 10px;
+            /*display: inline-block;*/
+            background: url(image/bg.png) no-repeat  -20px -70px;
+            padding: 0;
+        }
+		/*---------图片----------*/
+		.line1{
+			widows: 101px;
+			height: 30px;
+			line-height: 30px;
+		}
+		.line2{
+			width: 97px;
+			height: 30px;
+			line-height: 30px;
+			/*在列表项中使用margin可以把列表项整体左右位移在ul列表中不能使用，使用会使列崩溃
+			意味着如果使用触控接口在列表属性中强制写入margin-left会使列表崩塌加上遍历会使具有列表较多的网页瞬间瘫痪*/
+			margin-left: 30px;
+		}
+		.line3{
+			width: 55px;
+			height: 30px;
+			/*line-height: 30px;*/
+		}
+		.line4{
+			width: 55px;
+			height: 30px;
+			/*line-height: 30px;*/
+		}
+		.line5{
+			width: 137px;
+			height: 30px;
+			/*line-height: 30px;*/
+		}
+		.line6{
+			width: 103px;
+			height: 30px;
+			/*line-height: 30px;*/
+		}
+		.line7{
+			width: 113px;
+			height: 30px;
+			/*line-height: 30px;*/
+		}
+		.line8{
+			width: 110px;
+			height: 30px;
+			/*line-height: 30px;*/
+		}
+		/*.line8:hover{display: block;}*/
+		.line9{
+			width: 78px;
+			height: 30px;
+			/*line-height: 30px;*/
+		}
+		/*点控隐藏域：div的.class ul{display: none}子元素的.class:hover ul{display: block} */
+		.line8 ul {
+        	width: 242px;
+        	height: 72px;
+        	position: absolute;
+            top: 32px;
+            right: 155px;
+            z-index: 50;
+            background-color: #fff;
+            padding: 5px 10px;
+            border: 1px solid #eee;
+            /*点控父元素遮罩*/
+            display: none;
+        }
+		/*点控隐藏域属性*/
+        .line8:hover ul{
+        	width: 242;
+        	height: 72px;
+        	position: absolute;
+            top: 32px;
+            right: 155px;
+            z-index: 50;
+            background-color: #fff;
+            padding: 5px 10px;
+            border: 1px solid #eee;
+            /*点控子元素显示*/
+            display: block;
+            
+        }
+        
+        .line8 ul li{
+        	text-align: left;
+            width: 240px;
+            padding-top: 5px;
+        	list-style: none;
+        	float: left;
+        	line-height: 20px;
+        	display: inline-block;
+        }
+        .line8 li img{
+        	float: left;
+            padding-right: 10px;
+            width: 70px;
+            height: 70px;
+        }
+	</style>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+<!--顶部----->
+         <!-- #id  #top -->
+		<div id="top">
+			<!-- .taopz 蓝色边框-->
+			<div class="topz">
+				<ul>
+					<!--seo： <em> 标签告诉浏览器把其中的文本表示为强调的内容 -->
+				    <li class="line1"><a href=""><em class="wx"></em>微信登录</a></li>
+				   <li class="line2"><a href=""><em class="qq"></em>QQ登录</a></li>
+				   <li class="line3"><a href="">登录</a></li>
+				   <li class="line4"><a href="">注册</a></li>
+				   <li class="line5"><a href=""><em class="gwc"></em>我的购物车<span class="tip">0</span></a></li>
+				   <li class="line6"><a href=""><em class="dtan"></em>我的订单</a></li>
+				   <li class="line7"><a href=""><em class="hyuan"></em>美丽说会员</a></li>
+
+				   <li class="line8">
+				   	<a href=""><em class="app"></em>下载App<em class="arrow"></em></a>
+				   	<!-- 隐藏域： line8 ul{display: none;(遮罩层)}
+				   		line8：hover ul{display: block;} (显示层)-->
+				   	<ul>
+				   		<!-- 点控.sao控制隐藏域盒子 -->
+				   		<li class="sao">
+				   			<img src="image/sao.jpg"/>
+				   			<p style="font-size: 14px;color: #FF6699;">美丽说客服端</p>
+				   			<p style="color: #666666;">发现流行，只做正确流行款</p>
+				   		</li>
+				   	</ul>
+				   </li>
+				   <!-- css样式.line9点控li盒子 -->
+				   <li class="line9"><a href="" style="border: none;">帮助中心</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--顶部-结束---->
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>前端快速开发-大体框架1</title>
+	<style type="text/css">
+	    *{margin: 0;padding: 0;}/*清除浏览器计算的内外边距*/
+	    /*清晰具体注释的开始和结束决定这项目开发进度的快慢*/
+	    
+ /*大体框架 1.主体 box最外层最大的部分 设置最外层的宽度*/
+	    .box{width: 100%;}
+/*大体框架2.头部 header*/
+	    .header{}
+	    
+/*大体框架：3.导航 menu*/
+        .menu{ }
+        
+/*大体框架：4.内容 content*/
+        .content{width: 100%;}
+        .content_1{width: 1180px;height: 541px;border: 1px solid #F3F3F3;margin: auto;margin-top: 50px;}
+        /*表格模板*/
+        /*行高*/
+        .hang_1{height: 250px;}
+        .hang_2{height: 290px;}
+        /*列宽*/
+        .lie_1{width:250px; }
+        .lie_2{width: 940px;}
+
+       
+      
+        
+
+ /*大体框架5.底部 bottom*/
+        .bottom{}
+        
+    </style>
+</head>
+<body>
+<!--大体框架 1. 主体 box最外层最大的部分-->
+	<div class="box">
+		
+	</div>
+	<!-- 大体框架 2.头部 header-->	
+	<div class="header">
+		
+	</div> 
+	<!-- 大体框架 3.导航 menu-->
+	<div class="menu">
+		
+	</div>
+	<!--大体框架 4. 内容 content-->
+	<div class="content">
+		<!-- 写生开始 -->
+		<!-- 定义外1层content_1灰黑色边框的div开始 -->
+		<div class="content_1">
+			<!-- 定义外二层蓝色边框的表格1开始 -->
+			<table width="1180"height="540" border="1" cellspacing="0" cellpadding="0">
+				<!-- 搭建2行两列的表格开始 -->
+				<!-- 行高tr列宽td设置css样式决定了表格的大小 -->
+				<tr class="hang_1">
+					<td class="lie_1">
+						<!-- 表格嵌套开始 -->
+						<table width="248"height="230" border="1" cellspacing="0" cellpadding="0">
+							<caption>超级折扣</caption>
+							<tr><td></td><td></td></tr>
+							<tr><td></td><td></td></tr>
+							<tr><td></td><td></td></tr>
+							<tr><td></td><td></td></tr>
+						</table>
+					
+
+						<!-- 表格嵌套结束-->
+
+					</td>
+                    <!-- Rowspan规定单元格可以合并的行数 使用rowspan的时候要在表格前面新建行 -->
+					<!-- 合并行模板开始 -->
+					<td rowspan="2" class="lie_2">jQuery宝贝轮播</td>
+					<!-- 合并行模板结束 -->
+					
+					
+				</tr>
+				<tr class="hang_2">
+					<td lie_1>
+						<!-- 表格嵌套开始 -->
+							<table width="245"height="260" border="1" cellspacing="0" cellpadding="0">
+							<caption>超级折扣</caption>
+							<tr><td></td><td></td></tr>
+							<tr><td></td><td></td></tr>
+							<tr><td></td><td></td></tr>
+							<tr><td></td><td></td></tr>
+							<tr><td></td><td></td></tr>
+							<tr><td></td><td></td></tr>
+							<tr><td></td><td></td></tr>
+						</table>
+
+						<!-- 表格嵌套结束-->
+                   
+
+					</td>
+					
+				</tr>
+				<!-- 搭建2行两列的表格结束 -->
+			</table>
+			<!-- 定义外二层蓝色边框的表格1结束 -->
+			
+		</div>
+        <!-- 定义外1层content_1灰黑色边框的div结束 -->
+		<!-- 写生结束 -->
+		
+	</div>
+	<!-- 大体框架 5.底部 bottom-->
+	<div class="bottom">
+			
+
+	</div>
+
+</div>
+</body>
+</html>

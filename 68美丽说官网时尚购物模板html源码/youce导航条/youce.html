@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>美丽说购物网站</title>
+		<meta name="abstract" content=""/>
+		<!-- <link rel="stylesheet" type="text/css" href="index.css"/> -->
+		<style type="text/css">
+				*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			font-family: Arial;
+			font-size: 12px;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			color: #FF6699;
+		}
+			/*=======右边导航开始=============*/
+		#wsa{
+			width: 37px;
+			height:100%;
+			position: fixed;
+		    right: 0;
+		    top: 0;
+		    z-index: 80;
+		}
+		#adri{
+			width: 100%;
+			height: 100%;
+			position:relative;
+		}
+		#adri #base{
+			width: 37px;
+			height: 100%;
+			background: #F6F6F6;
+			border: 1px solid #DDDDDD;
+			position:absolute;
+			right: -38px;
+			top: 0;
+			z-index: 80;
+		}
+		/*======*/
+		#side{
+			width: 100%;
+			height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+		}
+		#side .basel{
+			background-color: #f6f6f6;
+            height: 45%;
+            min-height: 260px;
+		}
+		#side a{
+			display: block;
+			position: relative;
+			font-size: 12px;
+            color: #666;
+		}
+		#side a:hover{
+			background: #FF6699;
+		}
+		#side #right_1{
+			padding: 12px 9px;
+			border-bottom: 1px solid #DDDDDD;
+		}
+		#right_1:hover .w_yh{
+			display: block;
+		}
+		#right_1:hover .red_yh{
+			display: none;
+		}
+		#right_1:hover .stip{
+			display: block;
+		}
+		#side #right_2{
+			padding: 11px 9px 10px;
+			border-bottom: 1px solid #DDDDDD;
+		}
+		#right_2:hover .w_like{
+			display: block;
+		}
+		#right_2:hover .red_like{
+			display: none;
+		}
+		#right_2:hover .stip{
+			display: block;
+		}
+		#side #right_3{
+			padding: 10px 8px 11px 10px;
+			border-bottom: 1px solid #DDDDDD;
+		}
+		#right_3:hover .w_feed{
+			display: block;
+		}
+		#right_3:hover .red_feed{
+			display: none;
+		}
+		#right_3:hover .stip{
+			display: block;
+		}
+		#side .stip{
+			font-size: 12px;
+            color: #fff;
+            background-color: #666;
+            position: absolute;
+            right: 36px;
+            bottom: 4px;
+            white-space: nowrap;
+            padding: 7px 12px;
+            display: none;
+            z-index: 80;
+		}
+		#side .stip .blck_s{
+			width: 5px;
+            height: 10px;
+            position: absolute;
+            bottom: 9px;
+            right: -5px;
+            background: url(image/black_triangle.png) no-repeat;
+		}
+		/*==imgcc==*/
+		#right_1{
+			display: block;
+		}
+		.red_yh{
+			width: 18px;
+            height: 13px;
+            background: url(image/youhuih.png) no-repeat;
+            display: block;
+		}
+		.w_yh{
+			width: 18px;
+            height: 13px;
+            background: url(image/youhui.png) no-repeat;
+            display: none;
+		}
+		#right_2{
+			display: block;
+		}
+		.red_like{
+			width: 18px;
+            height: 16px;
+            background: url(image/red_like.png) no-repeat;
+            display: block;
+		}
+		.w_like{
+			width: 18px;
+            height: 16px;
+            background: url(image/w_like.png) no-repeat;
+            display: none;
+		}
+		#right_3{
+			display: block;
+		}
+		.red_feed{
+			width: 18px;
+            height: 16px;
+            background: url(image/red_feed.png) no-repeat;
+            display: block;
+		}
+		.w_feed{
+			width: 18px;
+            height: 16px;
+            background: url(image/w_feed.png) no-repeat;
+            display: none;
+		}
+		/*///*/
+		#adrs{
+            height: 45%;
+            position: relative;
+            min-height: 260px;
+            margin-right: 38px;
+            right: 2px;
+            z-index: 90;
+		}
+		#adrc{
+			width: 37px;
+		    height: 241px;
+			position: absolute;
+			bottom: 0;
+			z-index: 90;
+	    }
+	    #adrc a{
+	    	font-size: 12px;
+	    	color: #666666;
+	    	text-align: center;
+	    	display: block;
+	    }
+	    /*////*/
+	    #adrcc{
+	    	width: 37px;
+	    	height: 108px;
+	    	background: #F6F6F6;
+	    	border: 1px solid #DDDDDD;
+	    	position: relative;
+	    }
+	    #adrcc:hover{
+	    	color: #FFFFFF;
+	    	background: #FF6699;
+	    }
+	    #adrcc:hover .w_gwc{
+	    	display: block;
+	    }
+	    #adrcc:hover .red_gwc{
+	    	display: none;
+	    }
+	    .red_gwc{
+	    	width: 17px;
+            height: 13px;
+            margin-top: 27px;
+            margin-left: 10px;
+            background: url(image/gwc-p.png) no-repeat;
+            display: block;
+	    }
+	    .w_gwc{
+	    	width: 17px;
+            height: 13px;
+            margin-top: 27px;
+            margin-left: 10px;
+	    	background: url(image/gwc-w.png) no-repeat;
+	    	display: none;
+	    }
+	    #adrcc span{
+	    	width: 12px;
+            margin-left: 13px;
+            margin-top: 5px;
+            display: block;
+	    }
+	    /*///*/
+	    #adrcg{
+	    	width: 37px;
+	    	height: 107px;
+	    	padding-top: 26px;
+	    	border: 1px solid #DDDDDD;
+	    	background: #F6F6F6;
+	    	border-top: none;
+	    }
+	    #adrcg:hover{
+	    	color: #FFFFFF;
+	    	background: #FF6699;
+	    }
+	    #adrcg:hover .w_xin{
+	    	display: block;
+	    }
+	    #adrcg:hover .red_xin{
+	    	display: none;
+	    }
+	    .red_xin{
+	    	width: 15px;
+            height: 14px;
+            margin-left: 11px;
+            background: url(image/xinxi-p.png) no-repeat;
+            display: block;
+	    }
+	    .w_xin{
+	    	width: 15px;
+            height: 14px;
+            margin-left: 11px;
+	    	background: url(image/xinxi-w.png) no-repeat;
+	    	display: none;
+	    }
+	    #adrcg span{
+	    	width: 12px;
+            margin-left: 13px;
+            margin-top: 5px;
+            display: block;
+	    }
+	    /*===*/
+	    /*返回顶部*/
+	    #fans{
+	    	position: absolute;
+            bottom: 0;
+            right: 2px;
+            height: 20%;
+            width: 100%;
+            z-index: 90;
+	    }
+	    #fans .top{
+	    	width: 37px;
+	    	height: 37px;
+	    	border-top: 1px solid #ddd;
+            height: 36px;
+            font-size: 12px;
+            color: #f69;
+            background-color: #f6f6f6;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            display: none; 
+	    }
+	    #fans .top .tops{
+	    	width: 14px;
+            height: 7px;
+            margin-top: 13px;
+            margin-left: 11px; 
+            background: url(image/tops.png);
+            display: block;
+	    }
+	    #fans .top .asda{
+	           margin: 4px 6px ;
+	           text-align: center;
+	           line-height: 15px;
+	           display: inline-block;
+
+	    }
+		</style>
+		<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="inde.js"></script>
+	</head>
+	<body>
+	
+		   <!--=========右侧开始=====-->
+		   <div id="wsa">
+		   	    <div id="adri">
+		   	        <div id="adrs">
+		   	   	  	    <div id="adrc">
+		   	   	  		    <a href="" id="adrcc">
+		   	   	  		    	<em class="red_gwc"></em>
+		   	   	  		    	<em class="w_gwc"></em>
+		   	   	  		    	<span>购物车</span>
+		   	   	  		    </a>
+		   	   	  		    <a href="" id="adrcg">
+		   	   	  		    	<em class="red_xin"></em>
+		   	   	  		    	<em class="w_xin"></em>
+		   	   	  		    	<span>客服消息</span>
+		   	   	  		    </a>
+		   	   	  	    </div>
+		   	   	    </div>
+		   	   	    <div id="base">
+		   	   	    	<div id="side">
+		   	   	    		<div class="basel"></div>
+		   	   	    	    <a href="" id="right_1">
+		   	   	    		    <em class="red_yh"></em>
+		   	   	    		    <em class="w_yh"></em>
+		   	   	    		    <span class="stip">
+		   	   	    		                    我的优惠券
+		   	   	    			    <em class="blck_s"></em>
+		   	   	    		    </span>
+		   	   	    	    </a>
+		   	   	    	    <a href="" id="right_2">
+		   	   	    		    <em class="red_like"></em>
+		   	   	    		    <em class="w_like"></em>
+		   	   	    		    <span class="stip">
+		   	   	    			          喜欢的商品
+		   	   	    			<em class="blck_s"></em>
+		   	   	    		    </span>
+		   	   	    	    </a>
+		   	   	    	    <a href="" id="right_3">
+		   	   	    		    <em class="red_feed"></em>
+		   	   	    		    <em class="w_feed"></em>
+		   	   	    		    <span class="stip">
+		   	   	    			           调查问卷
+		   	   	    			<em class="blck_s"></em>
+		   	   	    		    </span>
+		   	   	    	    </a>
+		   	   	        </div>
+		   	   	    </div>
+		   	    </div>
+		   	    <div id="fans">
+		   	   	    <div class="top" style="display: none;">
+		   	   	    	<em class="tops"></em>
+		   	   	    	<span class="asda" style="display: none;">返回顶部</span>
+		   	   	    </div>
+		   	   	</div>
+		   </div>
+	</body>
+</html>

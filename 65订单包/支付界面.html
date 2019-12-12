@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>支付界面</title>
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="css/shopping-mall-index.css" /> -->
+<style type="text/css">
+    @charset "utf-8";
+/* CSS Document */
+
+/*CSS 初始化*/
+body, v, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+body {
+    font-size:12px;
+    /* [disabled]color:#666; */
+    font-family:"Microsoft Yahei",Heiti,arial,helvetica,sans-serif!important;/*font-family:Verdana, Microsoft YaHei, Simsun;*/
+    line-height:23px;
+}
+fieldset, img { border:0;}
+img{ display:block;}
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%;}
+em { font-style:normal; }
+input, button, select, textarea{ outline:none;}
+textarea { resize:none; }
+a { color:#666;text-decoration:none; }
+a:hover { text-decoration:none;}
+a:focus{outline:none; -moz-outline:none;}       /*解决  去除 a 链接点击后有一个虚线的边框出现*/
+
+/*a:hover{ color:#F09E0B;}*/
+
+/*公用样式*/
+.w1200{ width:1200px; margin:0 auto;}
+.mt20{ margin-top:20px;}
+.f-l{ float:left;}
+.f-r{ float:right;}
+.none{ display:none;}
+
+
+
+/*支付界面开始*/
+.payment-interface{}
+.payment-interface .pay-info{ border:1px solid #DEDEDE; margin-bottom:28px;}
+.pay-info .info-tit{ height:44px; background:#f7f7f7; border-bottom:1px solid #DEDEDE;}
+.pay-info .info-tit h3{ font-weight:normal; line-height:44px; font-size:14px; color:#000; margin-left:15px;}
+.pay-info .pay-yh{}
+.pay-info .pay-yh li{ float:left; width:299px; height:77px;border-right:1px solid #DEDEDE;border-bottom:1px solid #DEDEDE;}
+.pay-info .pay-yh li input{ float:left; height:77px; margin:0 20px 0 25px;}
+.pay-info .pay-yh li img{ float:left; margin-top:20px;}
+.pay-info .pay-kahao{ padding:18px 10px;}
+.pay-info .pay-kahao input{ width:399px; height:45px; padding:0 10px; border:1px solid #ddd; font-size:14px; color:#8B8B8B;}
+.pay-info .pay-kahao p{ display:inline-block; margin-left:12px; padding-left:23px; line-height:45px; background:url(../images/psw-dui.gif) no-repeat left center; font-size:13px; color:#525252;}
+.pay-info .pay-mima .mima-p1{margin-left:12px; padding-left:23px; line-height:45px; background:url(../images/psw-dui.gif) no-repeat left center; font-size:13px; color:#000;}
+.pay-info .pay-mima .mima-ipt{ margin:10px 0 0 12px;}
+.pay-info .pay-mima .mima-ipt p{ display:inline-block; line-height:38px; font-size:14px; color:#262626;}
+.pay-info .pay-mima .mima-ipt input{ width:12px; height:38px; padding:0 13px; font-size:18px; color:#000; border:1px solid #E5E5E5; border-left:0;}
+.pay-info .pay-mima .mima-ipt span{ display:block; margin-left:143px; font-size:14px; color:#6d6d6d;}
+.pay-info .pay-mima .mima-btn{ width:117px; height:44px; line-height:44px; text-align:center; font-size:16px; color:#fff; background:#F09E0B; border:none; cursor:pointer; margin:27px 0 27px 155px;}
+/*支付界面结束*/
+
+</style>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/zhonglin.js"></script>
+</head>
+
+<body style="position:relative;">
+
+	
+    <!--输入卡号输入密码开始-->
+    <div class="payment-interface w1200">
+    	
+    	<div class="pay-info">
+        	<div class="info-tit">
+            	<h3>输入卡号</h3>
+            </div>
+            <div class="pay-kahao">
+            	<input type="text" placeholder="请输入银行卡号或支付宝账号"/>
+                <p>输入正确</p>
+            </div>
+        </div>
+    	<div class="pay-info">
+        	<div class="info-tit">
+            	<h3>输入密码</h3>
+            </div>
+            <div class="pay-mima">
+            	<p class="mima-p1">你在安全的环境中，请放心使用！</p>
+                <div class="mima-ipt">
+                	<p>支付宝或银行卡密码：</p>
+                    <input type="text" style="border-left:1px solid #E5E5E5;" /><input type="text" /><input type="text" /><input type="text" /><input type="text" /><input type="text" />
+                    <span>请输入6位数字支付密码</span>
+                </div>
+                <button class="mima-btn">立即支付</button>
+            </div>
+        </div>
+    </div>
+    <!-- 输入卡号输入密码结束 -->
+    
+   
+</body>
+</html>

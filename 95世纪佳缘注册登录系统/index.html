@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 设置页面中所有链接在新页面中打开 -->
+    <base href="_target">
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 网页标题图标 -->
+    <link rel="icon" href="favicon.ico">
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <style>
+        .box {
+            width: 600px;
+            height: 600px;
+            /* background-color: pink; */
+            margin: 0 auto;
+
+        }
+
+        .top {
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 18px;
+        }
+        
+        /* header公共盒子样式开始
+        .header {
+            height: 30px;
+          
+            line-height: 30px;
+
+        }
+
+        .header .header_1 {
+            width: 105px;
+            height: 30px;
+        }
+
+        .header .header_2 {
+            width: 400px;
+            height: 30px;
+        } 
+        header公共盒子样式结束
+        */
+
+     
+        .header {
+            height: 30px;
+            /* background-color: deeppink; */
+            line-height: 30px;
+
+        }
+
+        .header .header_1 {
+            width: 105px;
+            height: 30px;
+        }
+
+        .header .header_2 {
+            width: 400px;
+            height: 30px;
+        }
+
+        .header .header_2 input[text] {
+            border: 1;
+        }
+
+
+
+
+
+        /* .txt公共样式开始 */
+        /* .txt {
+            width: 600px;
+            height: 160px;
+        }
+
+        .txt .txt1 {
+            width: 105px;
+            height: 160px;
+            float: left;
+            line-height: 160px;
+        }
+
+        .txt .textarea {
+            width: 490px;
+            height: 160px;
+            float: right;
+           
+        } */
+        /* txt公共样式结束 */
+
+           .txt {
+            width: 600px;
+            height: 160px;
+        }
+
+        .txt .txt1 {
+            width: 105px;
+            height: 160px;
+            float: left;
+            line-height: 160px;
+        }
+
+        .txt .textarea {
+            width: 490px;
+            height: 160px;
+            float: right;
+            /* background-color: pink; */
+        }
+
+
+        .txt .textarea textarea{
+            width: 500px;
+            height: 160px;
+        }
+        .register {
+            width: 600px;
+            height: 52px;
+            background: url("images/btn.png") no-repeat 110px 0;
+            margin-top: 10px;
+        }
+        
+
+
+        /* top1公共样式开始 */
+        /* .top1 {
+            width: 600px;
+            height: 120px;
+            margin-top: 30px;
+            font-size: 18px;
+
+        }
+
+        .top1 .header_1 {
+            width: 105px;
+            height: 30px;
+        }
+
+        .top1 .header_2 {
+            width: 400px;
+            height: 30px;
+        } */
+
+        /* top1公共样式结束 */
+        .top1 {
+            width: 600px;
+            height: 120px;
+            margin-top: 30px;
+            font-size: 18px;
+
+        }
+
+        .top1 .header_1 {
+            width: 105px;
+            height: 30px;
+        }
+
+        .top1 .header_2 {
+            width: 400px;
+            height: 30px;
+        }
+
+        .top1 .header_2 p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            青春不常在 抓紧谈恋爱
+        </div>
+
+
+        <!-- header盒子结构开始 -->
+      
+
+
+        <!-- <div class="header">
+            <div class="header_1 fl">
+                
+            </div>
+            <div class="header_2 fl">
+                
+            </div>
+        </div> -->
+        <!-- 基本信息盒子结构结束 -->
+        <div class="header">
+            <div class="header_1 fl">
+                性别
+            </div>
+            <div class="header_2 fl">
+                <input type="radio"><img src="" alt=""> 男<input type="radio">女
+            </div>
+        </div>
+       
+
+        <div class="header">
+            <div class="header_1 fl">
+                生日
+            </div>
+            <div class="header_2 fl">
+                <select name="" id=""  >
+                    <option value="" selected>请选择年</option>
+                    <option value="" >请选择月</option>
+                    <option value="">请选择日</option>
+                </select>
+
+
+                <select name="" id="">
+                    <option value="">请选择年</option>
+                    <option value="" selected>请选择月</option>
+                    <option value="">请选择日</option>
+                </select>
+
+                <select name="" id="">
+                    <option value="">请选择年</option>
+                    <option value="">请选择月</option>
+                    <option value="" selected>请选择日</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="header">
+            <div class="header_1 fl">
+                所在地区
+            </div>
+            <div class="header_2 fl">
+                <input type="text" placeholder="北京">
+            </div>
+        </div>
+        <div class="header">
+            <div class="header">
+                <div class="header_1 fl">
+                    婚姻状况
+                </div>
+                <div class="header_2 fl">
+                    <input type="radio" checked> 未婚<input type="radio">离婚<input type="radio">丧偶
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header_1 fl">
+                学历
+            </div>
+            <div class="header_2 fl">
+                <input type="text" placeholder="小学">
+            </div>
+        </div>
+        <div class="header">
+            <div class="header_1 fl">
+                月薪
+            </div>
+            <div class="header_2 fl">
+                <input type="text" placeholder="5000-10000">
+            </div>
+        </div>
+        <div class="header">
+            <div class="header_1 fl">
+                手机号
+            </div>
+            <div class="header_2 fl">
+                <input type="text" placeholder="">
+            </div>
+        </div>
+        <div class="header">
+            <div class="header_1 fl">
+                昵称
+            </div>
+            <div class="header_2 fl">
+                <input type="text" placeholder="">
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="header_1 fl">
+                婚姻状况
+            </div>
+            <div class="header_2 fl">
+                <input type="checkbox"> 妩媚
+                <input type="checkbox" checked>柔美
+                <input type="checkbox">可爱
+                <input type="checkbox">小鲜肉
+                <input type="checkbox">型男
+                <input type="checkbox">气质
+
+            </div>
+        </div>
+
+
+
+
+        <!-- txt结构开始 -->
+        <!-- <div class="txt">
+            <div class="txt1">
+                自我介绍
+            </div>
+
+            <div class="textarea">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div> -->
+        <!-- txt结构结束 -->
+
+        <div class="txt">
+            <div class="txt1">
+                自我介绍
+            </div>
+
+            <div class="textarea">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div class="register">
+
+        </div>
+
+
+
+
+        <div class="header">
+            <div class="header_1 fl">
+
+            </div>
+            <div class="header_2 fl">
+                <input type="checkbox" checked>我同意注册条款和会员加入标准<br>
+                <a href="#">我是会员，立即登录</a>
+            </div>
+        </div>
+
+
+        <div class="top1">
+            <div class="header_1 fl">
+
+            </div>
+            <div class="header_2 fl">
+                <p>年满18岁</p>
+                <p>抱着严肃的态度</p>
+                <p>寻找另一半</p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

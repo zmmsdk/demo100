@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入样式表文件 -->
+    <link rel="stylesheet" href="base.css">
+    <style>
+        /* 补版技术：.w{
+		css属性
+		只要不设置定位  浮动  margin:0 auto  width  
+			其他属性都可以
+        }
+        根据版心层叠的特点  所有需要版心居中的父盒子都可以使用补版技术
+        补版权重  优先级   行内式>内联式》外链式*/
+        .w{
+            height: 400px;
+            background-color: pink;
+        }
+       .w .list li{
+            width: 290px;
+            height: 400px;
+            background-color: purple;
+         float: left;
+         /* mr的值为13.33 */
+         margin-right: 13.33px;
+        }
+        .w .list li:last-child{
+
+
+            /* 最佳搭档 */
+            float: right;
+            margin-right: 0;
+        }
+
+
+
+    .list li::after{
+	content: "HOT";
+	
+	display: block; 
+
+	 width:20px;
+	height:20px;
+	border:2PX solid red;
+	background-color:blue;
+	position：absolute;
+	top：20PX;
+	left：20PX;
+	}
+
+
+/* 总结：当几个块元素浮动一行显示占不满右边距是给last块元素添加伪类：last-child
+设置float：right;
+设置margin-right：0; */
+    </style>
+</head>
+
+<body>
+    <!-- 盒子1 -->
+    <div class=" w">
+        <ul class="list clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+
+
+    <!-- 发生垂直塌陷的两种解决方案 -->
+    <!-- 给父元素加边框 -->
+    <!-- 给父元素添加overflow:hidden; -->
+</body>
+
+</html>

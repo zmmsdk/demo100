@@ -1,0 +1,133 @@
+body {
+    min-width: 320px;
+    /*最小宽度*/
+    max-width: 540px;
+    /*最大宽度*/
+    margin: 0 auto;
+    /* background-color: pink; */
+    color: #3C3C3C;
+}
+
+/* 通用flex布局属性   */
+.flex{
+    display: flex;
+}
+/* flex-direction属性   flex-direction属性决定主轴的方向即项目的排列方向 */
+.flex_c {
+    display: flex;
+    flex-direction: column;   
+    /* 自下而上排列 以下边线为基准*/
+    /* flex-direction: column-reverse;自上而下排列 */
+    /*垂直排列*/
+}
+
+.flex_r {
+    display: flex;
+    /* 自左而右排列以左边线为基准 */
+    flex-direction: row;
+    /* 自右而左排列 */
+     flex-direction: row-reverse;
+    /*水平排列*/
+}
+
+/* 子元素所占份数 */
+.flex_1{
+    flex: 1;
+}
+.flex_2{
+    flex: 2;
+}
+.flex_3{
+    flex: 3;
+}
+.flex_4{
+    flex: 4;
+}
+.flex_5{
+    flex: 5;
+}
+.flex_6{
+    flex: 4;
+}
+
+
+
+
+
+/* 行内元素也可以使用flex布局 */
+.inline{
+    display:-webkit-flex;
+    display:flex;
+}
+
+.flex-wrap{
+    /* 不换行  wrap   换行第一行在第二行的上方在上方   wrap-reverse   换行第一行在第二行的下方 */
+    flex-wrap:nowrap;
+}
+
+
+
+/* 可以解决good列表占不满调外边距的问题 */
+/*     flex-end   右对齐   center  居中对齐space-between 两端对齐项目之间的间隔都相等 */
+/* space-around   每个项目两侧的间隔相等项目之间的间隔比项目与边框的间隔大一倍 */
+.justify-content{
+    /* 左对齐 */
+    justify-content :   flex-start;
+}
+
+
+/* flex-start   以上边框对齐    flex-end  以下边框对齐center  以中线对齐   baseline   项目盒子第一行文字的基线对齐
+    stretch   默认值    如果项目未设置高度或设置高度为0  auto   将占满整个容器的高度 */
+.align-items{
+    align-items: stretch ;
+}
+
+
+/* order属性   order属性定义项目的排列顺序    数值越小 排列越靠前  默认值为0
+
+order属性定义项目的排列顺序   数值越小  排列越靠前  默认为0 */
+
+.order{
+    order: 0;
+}
+
+
+/* flex-grow 属性   定义盒子项目的放大比例默认为0       如果存在剩余空间也放不大 */
+
+
+.flex-grow{
+  flex-grow: 0;
+}
+
+
+
+/* flex-shrink  属性   定义了项目的缩小比例  默认为1即如果空间不足则该项目将缩小<number>为1234等数值 */
+
+.flex-shrink {
+    flex-shrink: 1;   
+    /* 如果所有项目的flex-shrink属性都为1   当空间不足时   都将等比例缩小 */
+    
+    /* 如果一个项目的flex-shrink  属性为0   其他项目都为1   则空间不足时前者不缩小   负值对该属性无效 */
+}
+
+/* flex-basis  属性   定义了分配多余空间之前项目占据的主轴空间浏览器根据这个属性计算主轴是否有多余空间它的默认值为auto
+    即项目本来的大小 */
+.flex-basis{
+        /* length  |   a可以设置为和宽高属性一样的值比如350px   默认值为  0  1  auto   后两个属性可选 */
+        flex-basis:0;
+    }
+
+
+
+    /* align-self属性    
+    允许单个项目与其他项目不一样的对齐方式
+    可覆盖align-items属性
+    默认值为auto  表示继承父元素的align-items属性
+    如果没有父元素   则等同于 stretch    */
+
+.align-self{
+       align-self :stretch ;   
+       /* auto    flex-start   以上边框对齐    flex-end  以下边框对齐center  以中线对齐   baseline   项目盒子第一行文字的基线对齐
+       stretch   默认值    如果项目未设置高度或设置高度为0  auto   将占满整个容器的高度 */
+    
+   }

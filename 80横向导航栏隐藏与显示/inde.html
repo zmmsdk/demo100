@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品分类导航的隐藏与显示</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+		body{font-size: 14px;
+
+		}
+		ul{
+			list-style: none;
+		}
+		.div{
+			height: 30px;
+			background-color: #3c3c33;
+		}
+		.container{
+			/*width: 1000px;*/
+			margin: 0 auto;
+			
+		}
+		.div-in{
+			/*background-color: pink;*/
+			width: 150px;
+			height: 30PX;
+			line-height: 30px;
+			position: relative;
+			margin-left: 200px;
+		}
+		.div .div-line{
+				color: #fff;
+				
+				width: 800px;
+				text-align: center;
+				position: absolute;
+				top: 5px;
+				left: 320px;
+		}
+		.div .div-line .line{
+			float: left;
+			margin-left: 30px;
+			padding-left: 5px;
+			/*text-align: center;*/
+
+			/*display: inline-block;*/
+		}
+
+			.div .div-line .line-2{
+			float: right;
+			margin-left: 30px;
+			padding-left: 5px;
+			/*text-align: center;*/
+
+			/*display: inline-block;*/
+		}
+		.div .div-line .line-2 a{
+			color: #fff;
+		}
+		
+		.div-in    .sublist{
+			width: 900px;
+			height: 430px;
+			background-color: skyblue;
+			position: absolute;/*子绝父相*/
+			top: 30px;
+			left: 0px;
+			display: none;
+
+		}
+		.div-in:hover  .sublist{
+			width: 900px;
+			height: 450px;
+			background-color: skyblue;
+			position: absolute;/*子绝父相*/
+			top: 30px;
+			left: 0px;
+			display: inline-block;
+			/*text-align: center;*/
+		}
+		.div-in h4{
+			color: blue;
+			width: 150px;
+			float: left;
+			text-align: center;
+		}
+	
+		.div-in:hover .h4{
+			background-color: skyblue;
+			width: 150px;
+		}
+		.div-in  .sublist li{
+			float: left;
+			width: 168px;
+			padding-right: 24px;
+			padding-bottom: 24px;
+			margin-left: 30px;
+			margin-top: 5px;
+			/*display: none;*/
+		}
+		.div-in .sublist li h3.mcate-item-hd {
+			font-family: '微软雅黑';
+			padding-left: 2px;
+			font-size: 14px;
+			height: 26px;
+			line-height: 26px;
+			border-bottom: 1px dashed #666666;
+}
+
+.div-in .sublist li p.mcate-item-bd {
+	padding-left: 2px;
+}
+
+.div-in .sublist li p.mcate-item-bd a {
+	height: 26px;
+	line-height: 26px;
+	margin-right: 5px;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.div-in .sublist li p.mcate-item-bd a:hover {
+	color: #6c5143;
+	text-decoration: underline;
+}
+	</style>
+</head>
+<body>
+	<div class="div">
+		<div class="div-line">
+		    
+				<div class="line">加盟合作</div>
+				<div class="line">成功案例</div>
+				<div class="line">联系我们</div>
+
+				<div class="line-2"><a href="#">注册</a></div>
+				<div class="line-2"><a href="#">登录</a></div>
+			
+		</div>
+		<div class="div-in">
+			
+			<h4 class="h4">所有商品分类</h4>
+				<ul class="sublist">
+<li>
+<h3 class="mcate-item-hd">
+<span>服饰内衣</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">女装</a>
+<a href="#">男装</a>
+<a href="#">内衣</a>
+<a href="#">家居服</a>
+<a href="#">配件</a>
+<a href="#">羽绒</a>
+<a href="#">呢大衣</a>
+<a href="#">毛衣</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>鞋 箱包</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">女鞋</a>
+<a href="#">男鞋</a>
+<a href="#">箱包</a>
+<a href="#">女包</a>
+<a href="#">男包</a>
+<a href="#">旅行箱</a>
+<a href="#">钱包 </a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>珠宝、手表</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">饰品</a>
+<a href="#">项链</a>
+<a href="#">珠宝</a>
+<a href="#">钻石</a>
+<a href="#">手表</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>化妆品</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">护肤</a>
+<a href="#">彩妆</a>
+<a href="#">香水</a>
+<a href="#">男士</a>
+<a href="#">精油</a>
+<a href="#">假发</a>
+<a href="#">美体</a>
+<a href="#">试用服务</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>运动 户外</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">运动鞋</a>
+<a href="#">运动服</a>
+<a href="#">运动用品</a>
+<a href="#">户外</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>手机 数码</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">手机</a>
+<a href="#">笔记本</a>
+<a href="#">相机</a>
+<a href="#">平板电脑</a>
+<a href="#">配件</a>
+<a href="#">电脑硬件</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>家用电器</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">大家电</a>
+<a href="#">影音电器</a>
+<a href="#">生活电器</a>
+<a href="#">厨房电器</a>
+<a href="#">健康护理</a>
+<a href="#">剃须刀</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>家具 建材</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">家具</a>
+<a href="#">卫浴</a>
+<a href="#">地板</a>
+<a href="#">灯具</a>
+<a href="#">五金</a>
+<a href="#">开关</a>
+<a href="#">装修设计</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>家纺 居家</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">家纺</a>
+<a href="#">磨毛套件</a>
+<a href="#">羽绒被</a>
+<a href="#">枕头</a>
+<a href="#">软饰</a>
+<a href="#">居家</a>
+<a href="#">厨房</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>食品</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">零食</a>
+<a href="#">进口</a>
+<a href="#">茶叶</a>
+<a href="#">冲饮</a>
+<a href="#">酒水</a>
+<a href="#">粮油</a>
+<a href="#">干货</a>
+<a href="#">生鲜</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>医药保健</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">保健</a>
+<a href="#">滋补</a>
+<a href="#">蛋白粉</a>
+<a href="#">阿胶</a>
+<a href="#">药品</a>
+<a href="#">血压仪</a>
+<a href="#">计生</a>
+<a href="#">体检</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>母婴用品</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">玩具</a>
+<a href="#">宝宝食品</a>
+<a href="#">用品</a>
+<a href="#">童装</a>
+<a href="#">孕装</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>汽车 配件</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">新车</a>
+<a href="#">座垫</a>
+<a href="#">脚垫</a>
+<a href="#">GPS</a>
+<a href="#">车衣</a>
+<a href="#">洗车机</a>
+<a href="#">水枪</a>
+</p>
+</li>
+<li>
+<h3 class="mcate-item-hd">
+<span>文化 玩乐</span>
+</h3>
+<p class="mcate-item-bd">
+<a href="#">电子凭证</a>
+<a href="#">图书</a>
+<a href="#">乐器</a>
+<a href="#">旅游</a>
+<a href="#">鲜花</a>
+</p>
+</li>
+</ul> 
+				
+				
+			
+			
+		</div>
+		
+	</div>
+<!-- <div style="overflow: hidden;"></div> -->
+
+
+</body>
+</html>

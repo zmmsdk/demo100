@@ -1,0 +1,224 @@
+body{
+		margin: 0;
+		padding:0;
+	}	
+
+	.container{
+		font-family: 微软雅黑;
+		background: #fff;
+		/* padding: 30px; */
+		/* margin:30px auto; */
+		overflow: hidden;
+		margin-top: 30px;
+		margin-left: 210px;
+	}
+
+	.container .menu{
+		width: 190px;
+		/* margin-left: 50px; */
+		float: left;
+		border: 1px solid #aaa;
+		/* background-color: rgba(0,0,0,0.8); */
+		color: #4c4c4c;
+	}
+/*position 菜单背景图标*/
+	.positionIicon{
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		margin: 0px 4px;
+		
+		margin-right: 20px;
+	}
+/*menu图标*/
+	.q-menu-img{
+		background: url("../img/iconfont-kuaisulu.png");
+	}
+	
+	.q-menu-doit{
+		background: url("../img/iconfont-0bangzhushouce.png");
+	}
+
+	.q-menu-three{
+		background: url("../img/iconfont-wenti.png");
+	}
+
+
+	.container .menu h3{
+		font-size: 14px;
+		cursor: pointer;
+	
+	}
+    .container .menu ul{
+        display: none;
+    }
+	.container .menu ul li{
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		width: 190px;
+		padding-left: 0;
+		border: 1px dashed #ccc;
+	}
+
+	.container .menu ul li a:hover{
+		background: #FF3300;
+		
+		color:#4c4c4c;
+	
+	}
+
+	ul{
+		list-style: none;
+		padding-left: 0;
+	}
+
+	a{
+		text-decoration: none;
+		color: #000;
+		font-size: 14px;
+		display: block;
+		/* width: 120px; */
+		height: 50px;
+		padding-left: 0px;
+	}
+	
+	li a{
+		text-decoration: none;
+		color: #4c4c4c;
+		font-size: 14px;
+		display: block;
+		/* width: 120px; */
+		height: 50px;
+		padding-left: 0px;
+	}
+	a:hover{
+		color:#fff;
+	}
+
+
+
+
+
+	.container .content{
+		margin-top: 3px;
+		width: 860px;
+		margin-left: 210px;
+	}
+
+
+
+	.container .content .get-menu a{
+		display: inline-block;
+		font-size: 15px;
+	    height: 40px;
+	}
+
+	.container .content .get-menu a:last-child{
+		/* margin-left: -8px; */
+		color: #7D9EC0;
+	}
+
+	.container .content .get-menu span{
+		display: inline-block;
+	    height: 40px;
+	    /* margin-left: -60px; */
+	}
+
+	.container .content .menu1 .tab {
+		display: none;
+	}
+
+	.container .content .menu1 .active{
+		display: block;
+	}
+
+	.container .content .menu1 .tab p{
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(0,0,0,1);
+        word-break:break-all;
+	}
+
+	.container .content .menu1 .tab .tt{
+		font-size: 14px;
+		font-weight: bold;
+
+	}
+/*第二个菜单下的文档内容*/
+	.container .content .menu2 .tab {
+		display: none;
+	}
+
+	.container .content .menu2 .active{
+		display: block;
+	}
+
+	.container .content .menu2 .tab p{
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(0,0,0,0.8);
+        word-break:break-all;
+	}
+
+	.container .content .menu2 .tab .tt{
+		font-size: 14px;
+		font-weight: bold;
+
+	}
+/*第三个菜单下的文档内容*/
+	.container .content .menu3 .tab {
+		display: none;
+	}
+
+	.container .content .menu3 .active{
+		display: block;
+	}
+
+	.container .content .menu3 .tab p{
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(0,0,0,0.8);
+        word-break:break-all;
+	}
+
+	.container .content .menu3 .tab .tt{
+		font-size: 16px;
+		font-weight: bold;
+
+	}#apDiv2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	line-height: normal;
+	font-weight: bolder;
+	color: #FF3300;
+	background-color: #999999;
+
+}
+
+.STYLE1 {font-size: 36px}
+#apDiv2 #apDiv1 .STYLE130 a {
+	color: #FFFFFF;
+}
+#apDiv2 #apDiv1 table {
+	color: #FFFFFF;
+	font-style: normal;
+}
+.STYLE3 {font-weight: bold}
+.STYLE4 {
+	color: #FF6600;
+	font-size: 14px;
+	font-style: italic;
+}
+.STYLE5 {color: #FFFFFF}
+
+.STYLE6 {font-weight: bold}
+.STYLE7 {
+	font-size: 16px
+}
+.STYLE8 {
+	color: #CCCCCC;
+	font-size: 16px;
+}
+.STYLE9 {font-size: 16px}
+

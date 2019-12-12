@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 300px;
+            background-color: red;
+        }
+
+            .box2{
+            height: 300px;
+            background-color: pink;
+        }
+    </style>
+    <script>
+        function myFunction(){
+            x = document.getElementById("box1");   //找到元素
+            x.style.display = "none";           //改变内容
+        }
+    </script>
+</head>
+<body>
+    <div class="box1" id="box1">
+
+    </div>
+
+
+    <div class="box2">
+
+    </div>
+
+
+
+    <button type="button" onclick="myFunction()" id="demo">点击</button>
+<!-- 版心wapper 简称w  是在base.css文件中预定义的一个属性
+你知道的是它的属性值可以设置 magin：0 auto；  可以设置内容区域公共宽度
+你不知道的是当版心遭遇了脱标事件多么难受
+假设我们定义版心magin：0 auto；  width ：1200px  宽度为1200像素在document标准流中进行调用
+这时候的版心是没有高度的
+高度哪去了，高度由内容content撑开，假设内容子盒子是可以设置宽高的  子盒子设置浮动让块级block元素在一行显示
+这时候父盒子也就是所谓的版心盒子在子盒子脱离标准流的情况下会恢复本来的面貌  也就是高度依然为零
+那么下边的标准流会自动填充版心盒子的位置造成内容content重叠，使页面陷入混乱
+
+你不知道的是在页面中  用户都有不喜欢的内容，这时候赋予用户删除特权无疑迎合了用户需求  
+使用js脚本  设置display：none；不占用标准流隐藏元素   下面的标准流会自动填充空白区域  提高了用户体验
+
+即在一个不设高度且存在内容  内容存在高度的盒子  将内容不占位隐藏后面的内容会自动提升 -->
+
+
+
+也就是所有的效果都是可以通过js伪装的，这就架构了前端轻量级可控插件
+在js中  一切效果都是可以伪造的
+用来预解析数据
+
+
+伪查询
+
+伪删除
+
+伪新增
+
+伪修改
+
+伪过滤  也就是正则
+</body>
+</html>

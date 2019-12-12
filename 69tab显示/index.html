@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>内容管理系统</title>
+<!-- <link rel="stylesheet" href="css/zzsc.css" type="text/css" /> -->
+<style type="text/css">
+	*{margin:0;padding:0;}
+body{font-size:14px;font-family:"Microsoft YaHei";}
+/*去黑点*/
+ul,li{list-style:none;}
+
+#tab{position:relative;}
+#tab .tabList ul li{
+	/*在列表项中去除浮动可是列表项垂直排列*/
+	/*浮动*/
+	/*float:left;*/
+	/*背景颜色*/
+	background:#333;
+	background:-moz-linear-gradient(top, #333, #333);	
+	background:-o-linear-gradient(left top,left bottom, from(#333), to(#333));
+	background:-webkit-gradient(linear,left top,left bottom, from(#333), to(#333));
+	/*边框*/
+	/*border:1px dotted #ccc;*/
+	padding:5px 0;
+	/*宽度*/
+	width:150px;
+	height: 20px;
+	/*文本居中*/
+	text-align:center;
+	margin-left:-1px;
+	position:relative;
+	cursor:pointer;
+}
+#tab .tabList li.cur{
+	/*去除下边框*/
+	border-bottom:none;
+	/*点击后的背景色#fff*/
+	background:#FF3333;
+}
+#tab .tabCon{
+	position:absolute;
+	/*隐藏域距离左侧的距离*/
+	left:150px;
+	/*隐藏域距离上方的距离*/
+	top:0px;
+	/*隐藏域边框*/
+	border:1px solid #ccc;
+	border-left:none;
+	/*隐藏域宽高*/
+	width:1000px;
+	height:900px;
+}
+#tab .tabCon div{
+	padding:10px;
+	position:absolute;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+#tab .tabCon div.cur{
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+</style>
+ <script type="text/javascript" src="js/js.js"></script>
+</head>
+<!-- tab开始-->
+<!-- tab点控#tab  style="margin-left:20px;margin-top:20px" -->
+<div id="tab" >
+	<!-- tabList点控标题.tabList -->
+  <div class="tabList">
+	<ul>
+		<li class="cur">系统首页</li>
+		<li>商品管理</li>
+		<li>商品发布</li>
+		<li>图片管理</li>
+		<li>广告管理</li>
+		<li>影音视频管理</li>
+		<li>文章管理</li>
+		<li>推送平台</li>
+		<li>站长管理</li>
+		<li>用户管理</li>
+		<li>系统设置</li>
+		<li>商品管理</li>
+		<li>商品发布</li>
+		<li>图片管理</li>
+		<li>广告管理</li>
+		<li>影音视频管理</li>
+		<li>文章管理</li>
+		<li>推送平台</li>
+		<li>文章管理</li>
+		<li>推送平台</li>
+		
+	</ul>
+  </div>
+  <!-- tabCon点控隐藏域.tabCon -->
+  <div class="tabCon">
+	<div class="cur">英语</div>
+	<div>1234</div>
+	<div>5678</div>
+	<div>7890</div>
+	<div>1234</div>
+	<div>5678</div>
+	<div>7890</div>
+	<div>1234</div>
+	<div>5678</div>
+	<div>7890</div>
+	<div>7890</div>
+	<div>1234</div>
+	<div>5678</div>
+	<div>7890</div>
+	<div>1234</div>
+	<div>5678</div>
+	<div>7890</div>
+	<div>1234</div>
+	<div>7890</div>
+	<div>1234</div>
+	
+  </div>
+</div>
+
+</body>
+</html>

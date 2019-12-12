@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入样式表文件 -->
+    <link rel="stylesheet" href="base.css">
+    <style>
+        /* 补版技术：.w{
+		css属性
+		只要不设置定位  浮动  margin:0 auto  width  
+			其他属性都可以
+        }
+        根据版心层叠的特点  所有需要版心居中的父盒子都可以使用补版技术
+        补版权重  优先级   行内式>内联式》外链式
+	  */
+        .w {
+
+            /* height: 400px; */
+            background-color: pink;
+            /* margin-top: 200px; */
+            overflow: hidden;
+
+
+        }
+
+        .w1 {
+
+            height: 400px;
+            background-color: red;
+            /* 垂直塌陷开关这种办法需要改变盒子高度 */
+            /* 如果父元素不需要边框不推荐这种 */
+            /* border: 1px solid #ccc; */
+            /* 或者溢出隐藏切掉推荐 */
+            overflow: hidden;
+
+
+        }
+
+        .list {
+            /* 外边距垂直塌陷:   当给子元素设置margain-top的时候如果父元素也跟着移动就叫做垂直塌陷 */
+
+            /* .W1跟着下来了这就叫做垂直塌陷 */
+            margin-top: 10px;
+        }
+
+        .list li {
+            width: 280px;
+            height: 400px;
+            background-color: purple;
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 盒子1 -->
+    <div class=" w1">
+        <ul class="list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+
+
+    <!-- 发生垂直塌陷的两种解决方案 -->
+    <!-- 给父元素加边框 -->
+    <!-- 给父元素添加overflow:hidden; -->
+</body>
+
+</html>

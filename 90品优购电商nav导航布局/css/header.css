@@ -1,0 +1,222 @@
+.top{
+    /* width: 1200px; */
+    height: 80px;
+    margin: 0 auto;
+    background-color: #000;
+}
+.close{
+   width: 20px;
+   height: 20px;
+   background-color: #4c4c4c;
+   text-align: center;
+   line-height: 20px;
+   position: absolute;
+   top: 10PX;
+   right: 90PX;
+   color: #FFF;
+}
+.top1{
+    height: 20px;
+    background-color: #E5E5E3;
+    /* line-height: 30px; */
+    padding-top: 10px;
+    position: relative;
+
+}
+.top1 .top1_left{
+    width: 200px;
+    height: 30px;
+}
+.top1 .top1_left .register{
+    color: red;
+}
+.top1 .top1_right{
+    line-height: 30px;
+    height: 30px;
+
+}
+.top1 .top1_right li{
+    margin-left: 10px;
+}
+.top1 .top1_right .fl:hover{
+    color: red;
+}
+
+.top2{
+    height: 95px;
+    /* background-color: pink; */
+    padding-top: 20px;
+    position: relative;
+}
+.top2 .logo{
+    width: 171px;
+    height: 61px;
+}
+.top2 .search{
+    margin-left: 175px;
+    width: 500px;
+    height: 34px;
+    border: 1px solid red;
+}
+.top2 .search input{
+    width: 438px;
+    height: 34px;
+    float: left;
+}
+.top2 .search a{
+
+   width: 62px;
+   height: 34px;
+   background-color: red;
+   display: block;
+   text-align: center;
+   float: right;
+   line-height: 34px;
+ 
+  
+}
+.top2  .carts{
+    width: 190px;
+    height: 36px;
+    border: 1px solid #ccc;
+    margin-left: 82px;
+    line-height: 36px;
+    text-align: center;
+    position: relative;
+
+}
+.top2  .carts .icon-shouye{
+    color: red;
+}
+.top2  .carts .ba{
+    width: 15px;
+    height:15px;
+    background-color: red;
+    border-radius: 10px 10px 10px 0;
+    position: absolute;
+    top: -5px;
+    right: 50px;
+    text-align: center;
+    font-size: 10px;
+    /* 通过调文字高度让数字居中 */
+    line-height: 15px;
+ 
+}
+.top2 .list_one{
+    width: 600px;
+    height: 60px;
+    position: absolute;
+    top: 60px;
+    left: 345px;
+}
+.top2 .list_one li{
+    margin-left: 10px;
+}
+.products{
+    height: 45px;
+    border-bottom: 2px solid red;
+}
+.w1{
+    background-color: pink;
+    height: 45px;
+
+}
+.w1 .l_list{
+    width: 210px;
+    height: 465px;
+    background-color: #E20001;
+
+    float: left;
+   
+  
+}
+.w1 .l_list h4{
+    color: #FFF;
+    font-size: 18px;
+    height: 45px;
+    width: 210px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #c81822;
+   
+
+}
+.w1 .l_list .clearfix{
+    color: #FFF;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-top: 20px;
+}
+.w1 .l_list li{
+    height: 42px;
+}
+.w1 .r_list{
+    float: left;
+    
+}
+.w1 .r_list li{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 20px;
+  
+    
+} 
+
+.footer{
+    /* height: 500px; */
+    background-color: #DFDEDA;
+    margin-top: 700px;
+}
+.footer .w8{
+    background-color: skyblue;
+    /* height: 500px; */
+}
+.footer .top8{
+    height: 55px;
+    /* background-color: pink; */
+}
+.footer .item{
+    width: 175px;
+    height: 55px;
+    background-color: deeppink;
+}
+.footer .items{
+    width: 55px;
+    height: 55px;
+    /* background-color: green; */
+    background:url("../img/icons.png") -251px 1px no-repeat;
+}
+.footer .middle{
+    height: 168px;
+    border-bottom: 1px solid #000;
+}
+.footer .middle dl{
+    float: left;
+    margin-top: 22px;
+    margin-right: 125px;
+}
+.footer .middle dl:last-child{
+    
+    margin-right: 0px;
+}
+.footer .middle dl:first-child{
+    
+    margin-left: 20px;
+}
+.footer .middle dl dt{
+
+   margin-bottom: 6px;
+   font-weight: 700;
+   font-size: 16px;
+}
+.footer .middle dl dd{
+
+margin-bottom: 4px;
+
+font-size: 14px;
+}
+.footer p{
+text-align: center;
+margin-top: 20px;
+}
